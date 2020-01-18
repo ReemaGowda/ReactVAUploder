@@ -16,34 +16,33 @@ const FileUpload = () => {
   const [uploadPercentage, setUploadPercentage] = useState(0);
   // const[overlayActive, setoverlayActive] = useState(true)
 
+  
+  
+
   const onChange = e => {
     console.log(e.target.files[0]);
     setFile(e.target.files[0]);
     setFilename(e.target.files[0].name);
+      
   };
 
-  //   const closeOverlay=()=>{
-  //     // this.setState({
-  //     //     overlayActive:false
-  //     // })
-  //     setoverlayActive({
-  //       overlayActive:false
-  //     })
-  // }
 
-  // const cancelCourse = () => {
-  //     document.getElementById("create-course-form").reset();
+  
+  
 
-  // }
-
-  const handleSubmitted = ({ res, fields, form }) => {
-    form.reset(); // resets "username" field to "admin"
-  };
+const refreshPage = () => {
+  window.location.reload(false);
+}
+  
 
   const onSubmit = async e => {
     e.preventDefault();
+    e.target.reset();
+  
     const formData = new FormData();
     formData.append("file", file);
+    
+   
 
     try {
       const res = await axios.post("/upload", formData, {
@@ -84,30 +83,25 @@ const FileUpload = () => {
         {/* <Fragment> */}
         <p className="SecondHeading">Select the file from your computer</p>
         {message ? <Message msg={message} /> : null}
+
         <form
           onSubmit={onSubmit}
-          id="create-course-form"
-          // onSubmitted={handleSubmitted}
+          
+         
+         
+          id="myForm"
+         
         >
-          <div className="custom-file mb-4">
-            {/* 
-          <label className='custom-file-label' htmlFor='customFile'>
-            {filename}
-          </label>
-          <input
-            type='file'
-            className='custom-file-input'
-            id='customFile'
-            onChange={onChange}
-          /> */}
-            <div class="file-input">
-              <input type="file" onChange={onChange} />
+          <div className="custom-file mb-4" >
+           
+            <div class="file-input"  >
+              <input type="file" name={filename} onChange={onChange} />
               <span class="button">@</span>
-              {/* <span class='label' data-js-label>No file selected <label/> */}
               <label className="" htmlFor="customFile">
                 {filename}
               </label>
             </div>
+            
           </div>
 
           <Progress percentage={uploadPercentage} />
@@ -118,15 +112,15 @@ const FileUpload = () => {
               name="cancelCourse"
               value="Cancel"
               className="second btn"
-              // onClick={cancelCourse}
-              // onClick={resetForm}
-              // onSubmitted={handleSubmitted}
-              // onClick={closeOverlay}
+              // onClick={myFunction}
+              onClick={refreshPage}
+             
+             
             />
-
-            <input type="submit" value="Upload File" className="first btn " />
+            <input type="submit" value="Upload File" className="first btn " name="upload" />
           </div>
         </form>
+
         {uploadedFile ? (
           <div className="row mt-5">
             <div className="col-md-6 m-auto">

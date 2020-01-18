@@ -6,6 +6,7 @@
     "axios": "^0.18.0",
     "node-sass": "^4.13.1",
     "react": "^16.8.6",
+    "react-basic-form": "^1.1.93",
     "react-dom": "^16.8.6",
     "react-h5-audio-player": "^2.3.0",
     "react-scripts": "2.1.8",
