@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-export default class DropZone extends React.Component {
+export default class DropZone extends Component{
     constructor() {
       super();
       this.state = {
@@ -59,11 +59,6 @@ export default class DropZone extends React.Component {
     }
     
     render() {
-      const previewStyle = {
-        display: 'inline',
-        width: 100,
-        height: 100,
-      };
       return (
         <div>
           {this.props.children}
