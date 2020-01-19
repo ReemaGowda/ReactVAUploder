@@ -4,10 +4,12 @@
   "private": true,
   "dependencies": {
     "axios": "^0.18.0",
+    "cuid": "^2.1.8",
     "node-sass": "^4.13.1",
     "react": "^16.8.6",
     "react-basic-form": "^1.1.93",
     "react-dom": "^16.8.6",
+    "react-dropzone": "^10.2.1",
     "react-h5-audio-player": "^2.3.0",
     "react-scripts": "2.1.8",
     "react-video-tag": "0.0.10"
