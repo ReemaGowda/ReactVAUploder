@@ -1,121 +1,98 @@
-.wrapper{
-    width: 40%;
-    margin: 50px auto;
-}
-
-@import url(https://fonts.googleapis.com/css?family=Exo+2:400,700,500,300);
-
-$blue: #3498db;
-$red: #e74c3c;
-$primary:white;
-$grey:grey;
-
-
-body {
-  font-family: "Exo 2";
-}
-
-.divClass{
-  box-shadow: 0 0 0 1px rgba(255,255,255,.05),inset 0 0 .25em 0 rgba(0,0,0,.25);
-  width: 55%;
+.wrapper {
+  width: 40%;
   margin: 50px auto;
 }
 
-.zone {      
-    margin: 50px auto;
-  // margin-top: -200px;
+$blue: #3498db;
+$red: #e74c3c;
+$primary: white;
+$grey: grey;
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.divClass {
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05),
+    inset 0 0 0.25em 0 rgba(0, 0, 0, 0.25);
+  width: 55%;
+  margin: 30px auto;
+}
+
+.zone {
+  margin: 50px auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  width:50%;
-  text-align:center;
-  /* color: white; */
+  width: 50%;
+  text-align: center;
   z-index: 20;
   transition: all 0.3s ease-out;
   .btnCompression {
     .btn {
-
-    } 
+    }
     .active {
-      background: #EB6A5A;
-      // color:white;
+      background: #eb6a5a;
     }
   }
 
-
   i {
     text-align: center;
-    font-size: 10em;  
-    // color:#fff;
+    font-size: 10em;
     margin-top: 50px;
   }
   .selectFile {
     height: 50px;
-    // margin: 20px auto;
     position: relative;
-    width: 200px;          
+    width: 200px;
   }
 
-  input[type=file] {
+  input[type="file"] {
     opacity: 1;
   }
-
 }
 
-
-
 .zone.in {
- 
   label {
-    // background: #fff;
-    color:#EB6A5A;
+    color: #eb6a5a;
   }
 }
 .zone.hover {
-  color:gray;
-  border-color:white;
-  // background:#fff;
-  border:5px dashed gray;
-  i {          
-    color:#EB6A5A;
+  color: gray;
+  border-color: white;
+  border: 5px dashed gray;
+  i {
+    color: #eb6a5a;
   }
-
-
   label {
-    // background: #fff;
-    color:#EB6A5A;
+    color: #eb6a5a;
   }
 }
-
 
 .zone.fade {
   transition: all 0.3s ease-out;
   opacity: 1;
 }
 
-
-.fa-file-import{
+.fa-file-import {
   font-size: 120px;
   margin-top: 40px;
   border: 2px soild red;
   padding: 50px;
- 
-  
 }
 
-.fas{
+.fas {
   border: 4px dashed lightgrey;
   border-radius: 50%;
   margin-left: 2px;
-  // color: white;
-  opacity: 0.1;;
+  opacity: 0.1;
 }
 
-.drop{
+.drop {
   color: grey;
 }
 
-.select{
+.select {
   display: flex;
   margin-left: 20px;
   margin-top: 50px;
@@ -128,24 +105,17 @@ body {
   color: lightskyblue;
   margin-top: 2px;
   opacity: 2.1;
-  
-  
 }
 
 .zone .selectFile {
   height: 27px;
-  // margin: 20px auto;
   position: relative;
   width: 650px;
   margin-left: 17px;
 }
 
-
-
 .selectFile {
   display: inline-block;
-  // text-align: left;
-  // background: #fff;
   background-color: whitesmoke;
   padding: 16px;
   width: 800px;
@@ -156,35 +126,26 @@ body {
   color: grey;
 }
 
-
-.fix{
+.fix {
   margin-top: 400px;
 }
-label{
-  // color: white;
-}
 
-.submitBtn{
+.submitBtn {
   display: flex;
   font-size: 12px;
-  justify-content:flex-end;
+  justify-content: flex-end;
   align-items: flex-end;
 }
 
-
 .first {
   border-color: $blue;
-  // color: #fff;
   color: black;
   box-shadow: 0 0 40px 40px $blue inset, 0 0 0 0 $blue;
   transition: all 150ms ease-in-out;
   opacity: 0.7;
-  // margin-left: 20px;
   margin-right: -64px;
-  
-  
   &:hover {
-    box-shadow: 0 0 10px ;
+    box-shadow: 0 0 10px;
     color: $blue;
   }
 }
@@ -196,9 +157,8 @@ label{
   transition: all 150ms ease-in-out;
   opacity: 0.6;
   margin-right: 40px;
-  
   &:hover {
-    box-shadow: 0 0 10px ;
+    box-shadow: 0 0 10px;
     color: $blue;
   }
 }
@@ -207,66 +167,50 @@ label{
   box-sizing: border-box;
   appearance: none;
   background-color: transparent;
-  // border: 2px solid $red;
   border-radius: -0.4em;
-  // color: $primary;
   cursor: pointer;
   display: flex;
   align-self: center;
   font-size: 10px;
   font-weight: 400;
   line-height: 1;
-  //  margin: 10px;
- 
   padding: 1.2em 2.8em;
   text-decoration: none;
   text-align: center;
   text-transform: uppercase;
   font-weight: 500;
-
 }
 
-.btnn{
+.btnn {
   display: flex;
-  // justify-content: flex-end;
   justify-content: flex-end;
   margin-top: 80px;
-  //  margin-right: 190px;
 }
 
-
-
-.headingfirst{
+.headingfirst {
   margin-top: 20px;
   padding: 30px;
   opacity: 0.5;
   font-size: 2.2rem;
 }
 
-
-.SecondHeading{
+.SecondHeading {
   margin-top: 20px;
-  // padding: 30px;
   margin-left: 2px;
-  
 }
-
-
 
 .file-input {
   display: inline-block;
   text-align: left;
-  //  background:lightblue;
-  // background: #fff;
   border: 1px solid grey;
   padding: 1px;
   width: 390px;
   position: relative;
   border-radius: 3px;
-   color: black;
+  color: black;
 }
 
-.file-input > [type='file'] {
+.file-input > [type="file"] {
   position: absolute;
   top: 0;
   left: 0;
@@ -275,7 +219,6 @@ label{
   opacity: 0;
   z-index: 10;
   cursor: pointer;
-
 }
 
 .file-input > .button {
@@ -294,41 +237,34 @@ label{
 }
 
 .file-input > .label {
-   color: #333;
+  color: #333;
   white-space: nowrap;
-  opacity: .3;
- 
+  opacity: 0.3;
 }
 
 .file-input.-chosen > .label {
   opacity: 1;
 }
 
-
 .progress {
   display: -ms-flexbox;
   display: flex;
   height: 10px;
-   width: 122%; 
+  width: 122%;
   overflow: hidden;
-  font-size: .75rem;
-   background-color: #e9ecef;
-  border-radius: .25rem;
-  
+  font-size: 0.75rem;
+  background-color: #e9ecef;
+  border-radius: 0.25rem;
 }
-
 
 video {
-	// margin: 30px;
-	width: 900px;
+  width: 900px;
   max-width: 100%;
- 
 }
 
-
-.audio{
+.audio {
   width: 200px;
-  color: #EB6A5A;
+  color: #eb6a5a;
   display: flex;
 }
 
@@ -336,32 +272,26 @@ video {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  
-    line-height: 1;
+  line-height: 1;
   font-family: inherit;
   height: 90px;
-  // width: 100%;
-   min-width: 400px;
-   padding: 10px 15px;
-   //background-color:gainsboro;
-  box-shadow: 0 0 3px  grey;
-
-  //  margin-bottom: 60px;
+  min-width: 400px;
+  padding: 10px 15px;
+  box-shadow: 0 0 3px grey;
   margin: 20px 22px 59px -38px;
-  
 }
-
-
-// .col-md-6 {
-//    -ms-flex: 0 0 50%;
-//   /* flex: 0 0 50%; */
-//   /* max-width: 50%; */
-// }
-
-
 
 .col-md-6 {
   -ms-flex: 0 0 50%;
   flex: 0 0 50%;
   max-width: 124%;
+}
+
+.close {
+  position: absolute;
+  right: 357px;
+  top: 62px;
+  width: 5px;
+  height: 5px;
+  opacity: 0.3;
 }

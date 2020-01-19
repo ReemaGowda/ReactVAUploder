@@ -75,7 +75,7 @@ const FileUpload = () => {
             <div className="custom-file mb-4">
               <div className="file-input">
                 <input type="file" name={filename} onChange={onChange} />
-                <span className="button">@</span>
+                <span className="button"><i class="fa fa-paperclip" aria-hidden="true"></i></span>
                 <label className="" htmlFor="customFile">
                   {filename}
                 </label>
