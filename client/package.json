@@ -11,7 +11,7 @@
     "react-dom": "^16.8.6",
     "react-dropzone": "^10.2.1",
     "react-h5-audio-player": "^2.3.0",
-    "react-scripts": "2.1.8",
+    "react-scripts": "5.0.1",
     "react-video-tag": "0.0.10"
   },
   "scripts": {
